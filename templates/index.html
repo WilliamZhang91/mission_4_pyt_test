@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <div class= "container">
+        <head>
+            <body>
+                <center><h1>Turners Web Search</h1>
+                <link  rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/Stylize.css') }}" >
+                <form action = "#" method = "post">
+                    <p style = "color:rgb(38, 9, 119); font-size:21px">This is website is a prototype of a web search application. It will search the Turners website for information relevant to the user search. </p>
+                    <p style = "color:rgb(38, 9, 119); font-weight: bold; font-size: 20px; padding-right:10px">Search: <input type = "text" name = "input"/></p>
+                    <p><input type = "submit" value = "submit"/></p>
+                    <p style = "font-size: 21px; color:rgb(233, 103, 17);">{{first_web_result}}</p>
+                    <p> {{text_input}}</p>
+                    <p style = "font-weight: bold;"> {{url_input}} </p>
+                    <p style = "font-size: 21px; color:rgb(233, 103, 17);">{{second_web_result}}</p>
+                    <p> {{text_input_2}}</p>
+                    <p style = "font-weight: bold;"> {{url_input_2}} </p>
+                    <p style = "font-size: 21px; color:rgb(233, 103, 17);">{{third_web_result}}</p>
+                    <p> {{text_input_3}}</p>
+                    <p style = "font-weight: bold;"> {{url_input_3}} </p>
+                    <p>{{adjusted_input}}</p>
+                </center>
+                </form>
+            </body>   
+        </head>
+    </div>
+</html>
